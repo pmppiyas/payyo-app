@@ -23,12 +23,13 @@
           <div class="divider divider-neutral"></div>
           <!-- Button Div -->
           <div class="flex flex-wrap justify-around gap-4">
-            <div class="btn btn-secondary text-xl bg-green-500 border-none">Add Money</div>
-            <div class="btn btn-secondary text-xl">Cash Out</div>
+            <div id="add-btn" class="btn btn-secondary text-xl bg-green-500 border-none">Add Money</div>
+            <div id="cash-out-btnn" class="btn btn-secondary text-xl">Cash Out</div>
             <div class="btn btn-secondary text-xl">Transiction</div>
           </div>
           <div class="divider divider-neutral"></div>
-          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+          <!-- Add Money Start -->
+          <div id="add-money-from" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">Amount</label>
@@ -40,15 +41,39 @@
 
               </div>
               <div class="form-control mt-6">
-                <button id="login-btn" class="btn btn-primary text-xl">Add Money</button>
+                <button id="add-money-btn" class="btn btn-primary text-xl">Add Money</button>
               </div>
             </form>
           </div>
+          <!-- Add Money End -->
+
+          <!-- Cash Out Start -->
+          <div id="cash-out-from" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">Amount</label>
+                <input id="cash-out-amount" type="number" placeholder="Enter Amount" class="input input-bordered"
+                  required />
+              </div>
+              <div class="form-control">
+                <label class="label">Password</label>
+                <input id="cash-out-password" type="password" placeholder="Password" class="input input-bordered"
+                  required />
+
+              </div>
+              <div class="form-control mt-6">
+                <button id="cash-out-btn" class="btn btn-primary text-xl">Cash Out</button>
+              </div>
+            </form>
+          </div>
+          <!-- Cash Out End -->
         </div>
       </div>
     </div>
   </main>
   <script src="js/add-money.js"></script>
+  <script src="js/cash-out.js"></script>
+  <script src="js/features.js"></script>
 </body>
 
 </html>

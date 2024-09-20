@@ -1,5 +1,5 @@
 document
-  .getElementById('login-btn')
+  .getElementById('add-money-btn')
   .addEventListener('click', function (event) {
     event.preventDefault();
     const balance = document.getElementById('myBalance').innerText;
@@ -18,8 +18,3 @@ document
       alert('Wrong Pin');
     }
   });
-
-document.getElementById('cash-out-btn').addEventListener('click', function () {
-  window.location.href = '/cash-out.html';
-  console.log('cahs out');
-});
